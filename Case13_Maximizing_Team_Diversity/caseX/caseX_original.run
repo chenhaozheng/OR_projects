@@ -1,0 +1,8 @@
+# RUN
+reset;
+option solver gurobi;
+
+model caseX_original.mod;
+data caseX_original.dat;
+solve;
+display x >> caseX_original.out;

@@ -1,0 +1,9 @@
+# RUN
+reset;
+option solver gurobi;
+
+model caseX_like.mod;
+data caseX_like.dat;
+option gurobi_options 'mipgap 0.3';
+solve;
+display x >> caseX_like.out;
